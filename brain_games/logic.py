@@ -6,7 +6,6 @@ SCORE = 3
 
 
 def game_logic():
-    question, Correct_answer = correct_answer()
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}')
@@ -14,14 +13,17 @@ def game_logic():
     index = 0
 
     while index < SCORE:
+       question, Correct_answer = correct_answer()
        print(f'Question: {question}')
        user_answer = prompt.string('Answer: ')
        if user_answer == Correct_answer:
-           return'Correct!'
+           print('Correct!')
+           index = index +1
+           if index == 3:
+               print(f'Congratulations, {name} !')
        else:
-           return f"{user_answer} is wrong answer ;(. Correct answer was another answer  {Correct_answer}"
-       index = index +1
-    print(f'Congratulations, {name} !')
+           print(f"'{user_answer}' is wrong answer ;(. Correct answer was another answer  '{Correct_answer}'\nLet's try again, {name}! " )
+           break
 
 
 if __name__ == '__main__':
