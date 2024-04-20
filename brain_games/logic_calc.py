@@ -13,16 +13,16 @@ def game_logic(game):
     index = 0
 
     while index < SCORE:
-       question, Correct_answer = game.correct_answer()
+       question, cor_answer = game.correct_answer()
        print(f'Question: {question}')
        user_answer = prompt.string('Answer: ')
-       if user_answer == Correct_answer:
+       if user_answer == cor_answer:
            print('Correct!')
            index = index +1
            if index == 3:
                print(f'Congratulations, {name} !')
        else:
-           print(f"'{user_answer}' is wrong answer ;(. Correct answer was another answer  '{Correct_answer}'\nLet's try again, {name}! " )
+           print(f"'{user_answer}' is wrong answer ;(. Correct answer was another answer  '{cor_answer}'\nLet's try again, {name}! " )
            break
 
 
