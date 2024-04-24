@@ -10,7 +10,7 @@ def correct_answer():
     progression = [num_1 + num_2 * i for i in range(n)]
     question = (f'{progression}')
     index = randint(0, len(progression) - 1)  # случайный индекс
-    Correct_answer = progression[index]  # сохраняем правильный ответ
+    Correct_answer =str(progression[index])  # сохраняем правильный ответ
     progression[index] = ".."
     return progression, Correct_answer
 
