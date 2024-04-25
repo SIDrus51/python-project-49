@@ -1,5 +1,7 @@
 install: 
 	poetry install
+brain-games:
+	poetry run brain-games
 
 brain-prime:
 	poetry run brain-prime
