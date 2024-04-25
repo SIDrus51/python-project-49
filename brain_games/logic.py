@@ -21,7 +21,7 @@ def game_logic(game):
 
            index = index +1
            if index == 3:
-               print(f'Congratulations, {name} !')
+               print(f'Congratulations, {name}!')
        else:
            print(f"'{user_answer}' is wrong answer ;(. Correct answer was another answer '{Correct_answer}'\nLet's try again, {name}! " )
            break
