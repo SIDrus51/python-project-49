@@ -1,6 +1,6 @@
 from random import randint
 import math
-overview = ('Find the greatest common divisior of given numbers.')
+overview = ('Find the greatest common divisor of given numbers.')
 
 def correct_answer():
     num_1 = randint(1,100)
