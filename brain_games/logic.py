@@ -1,5 +1,4 @@
 #!/scr/bin/env python3
-import random
 import prompt
 
 SCORE = 3
@@ -13,19 +12,16 @@ def game_logic(game):
     index = 0
 
     while index < SCORE:
-       question, Correct_answer = game.correct_answer()
-       print(f'Question: {question}')
-       user_answer = prompt.string('Answer: ')
-       if user_answer == Correct_answer:
-           print('Correct!')
-
-           index = index +1
-           if index == 3:
-               print(f'Congratulations, {name}!')
-       else:
-           print(f"'{user_answer}' is wrong answer ;(. Correct answer was another answer '{Correct_answer}'\nLet's try again, {name}! " )
-           break
-
-
-if __name__ == '__main__':
-    main()
+        question, Correct_answer = game.correct_answer()
+        print(f'Question: {question}')
+        user_answer = prompt.string('Answer: ')
+        if user_answer == Correct_answer:
+            print('Correct!')
+            index = index + 1
+            if index == 3:
+                print(f'Congratulations, {name}!')
+        else:
+            print(f"'{user_answer}' is wrong answer ;(. "
+                  f"Correct answer was another answer '{Correct_answer}'.")
+            print(f"Let's try again, {name}!")
+            break
