@@ -16,7 +16,7 @@ def game_logic(game):
        question, Correct_answer = game.correct_answer()
        print(f'Question: {question}')
        user_answer = prompt.string('Answer: ')
-       if user_answer == Correct_answer: #не сравнивает ,буд-то блок if пропускает
+       if user_answer == Correct_answer:
            print('Correct!')
 
            index = index +1
