@@ -5,8 +5,8 @@ overview = ('Answer "yes" if given number is prime. Otherwise answer "no".')
 
 def correct_answer():
     question = (f'{randint(1, 100)}')
-    Correct_answer = is_prime(question)
-    return question, Correct_answer
+    answer = is_prime(question)
+    return question, answer
 
 
 def is_prime(question):

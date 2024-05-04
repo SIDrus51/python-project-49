@@ -9,7 +9,7 @@ def correct_answer():
     n = randint(5, 10)  # длина
     progression = [num_1 + num_2 * i for i in range(n)]
     index = randint(0, len(progression) - 1)  # случайный индекс
-    Correct_answer = str(progression[index])  # сохраняем правильный ответ
+    answer = str(progression[index])  # сохраняем правильный ответ
     progression[index] = ".."
     question = ' '.join(map(str, progression))
-    return question, Correct_answer
+    return question, answer
