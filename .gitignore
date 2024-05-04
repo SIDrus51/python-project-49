@@ -6,3 +6,5 @@ dist/
 .coverage
 coverage.xml
 .pytest_cache/dist/
+demo.cast
+existing_session.cast
