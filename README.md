@@ -1,3 +1,10 @@
+This educational project consists of 5 games:
+"Even" - checks for parity 
+"Calc" - calculator
+"gcd" - greatest common divisor 
+"Progression" - arithmetic progression
+"Prime" - checks if a number is prime.
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/SIDrus51/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/SIDrus51/python-project-49/actions)
 
